@@ -13,6 +13,7 @@
     "lint": "turbo lint"
   },
   "devDependencies": {
-    "turbo": "latest"
+    "turbo": "latest",
+    "prisma": "^5.22.0"
   }
 }
