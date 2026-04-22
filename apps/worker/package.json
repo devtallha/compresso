@@ -1,0 +1,25 @@
+{
+  "name": "@compresso/worker",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@compresso/shared": "*",
+    "@compresso/database": "*",
+    "@compresso/domain": "*",
+    "amqplib": "^0.10.3",
+    "ioredis": "^5.3.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "sharp": "^0.33.2"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.5",
+    "@types/fluent-ffmpeg": "^2.1.24",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  }
+}
