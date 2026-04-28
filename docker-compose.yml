@@ -9,9 +9,9 @@ services:
       POSTGRES_PASSWORD: password
       POSTGRES_DB: compresso
     ports:
-      - "5432:5432"
+      - "54345:5432"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - compressor_pg_data_v2:/var/lib/postgresql/data
 
   rabbitmq:
     image: rabbitmq:3-management-alpine
@@ -30,4 +30,4 @@ services:
       - "6379:6379"
 
 volumes:
-  postgres_data:
+  compressor_pg_data_v2:

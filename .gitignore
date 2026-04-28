@@ -9,8 +9,6 @@ out/
 .turbo/
 
 # Environment variables & secrets
-.env
-.env.local
 .env.*.local
 *.pem
 *.key
@@ -27,7 +25,6 @@ yarn-debug.log*
 pnpm-debug.log*
 
 # IDEs & Editor
-.vscode/
 .idea/
 *.suo
 *.ntvs*
@@ -46,3 +43,7 @@ Thumbs.db
 
 .agent/
 .claude/
+temp_auto_push.bat
+temp_interactive_push.bat
+branch_structure.json
+config.bat
