@@ -58,6 +58,10 @@ export const Dropzone: React.FC<DropzoneProps> = ({ onUploadStarted }) => {
               {isDragActive ? 'Drop your file here' : 'Click or drag file to compress'}
             </p>
             <p className="text-zinc-500 mt-1">Video, Audio, or Images (Max 100MB)</p>
+            <div className="mt-3 inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-yellow-500/10 text-yellow-500/90 text-xs font-medium">
+              <span className="w-1.5 h-1.5 rounded-full bg-yellow-500 animate-pulse"></span>
+              <span>All files are securely deleted after 5 minutes</span>
+            </div>
           </div>
         </div>
 

@@ -8,12 +8,15 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "turbo dev",
-    "build": "turbo build",
+    "dev": "node init && turbo dev",
+    "build": "node init && turbo build",
     "lint": "turbo lint"
   },
   "devDependencies": {
-    "turbo": "latest",
-    "prisma": "^5.22.0"
+    "prisma": "^5.22.0",
+    "turbo": "latest"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0"
   }
 }

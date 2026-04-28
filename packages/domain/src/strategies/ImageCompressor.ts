@@ -11,6 +11,6 @@ export class ImageCompressor implements ICompressor {
   }
 
   supports(mimeType: string): boolean {
-    return mimeType.startsWith('image/');
+    return mimeType.startsWith('image');
   }
 }

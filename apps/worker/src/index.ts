@@ -105,7 +105,7 @@ async function startWorker() {
     } catch (error) {
       console.error('[Janitor] Error during cleanup:', error);
     }
-  }, 15 * 60 * 1000); // Run every 15 minutes
+  }, 1 * 60 * 1000); // Run every 1 minute
 }
 
 startWorker().catch(console.error);
